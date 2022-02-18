@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver # 6.x이상 mysql
+    url: jdbc:mysql://146.56.117.239:3306/ssssksss_server?characterEncoding=UTF-8&serverTimezone=Asia/Seoul # mysql db ????
+    username: ssssksss # root? mysql
+    password: 2457sksk@@
+  jpa:
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    format_sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+#      ddl-auto: validate # ?? ??? ??
