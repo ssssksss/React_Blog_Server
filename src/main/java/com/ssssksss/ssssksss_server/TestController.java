@@ -4,10 +4,7 @@ import com.ssssksss.ssssksss_server.commonDto.ResponseStatusDto;
 import com.ssssksss.ssssksss_server.userContainer.dto.UserDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * PackageName : com.ssssksss.ssssksss_server
@@ -22,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @RequestMapping(value="/ssssksss/test", method= RequestMethod.POST)
+    @CrossOrigin(origins="*", allowedHeaders="*")
     public ResponseEntity testPost(@RequestBody String test) {
         return ResponseEntity.ok().body(new ResponseStatusDto(200,"POST API 성공"));
     }
