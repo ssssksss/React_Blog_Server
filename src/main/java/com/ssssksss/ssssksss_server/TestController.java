@@ -19,7 +19,7 @@ public class TestController {
 
     @RequestMapping("/")
     public String index() throws Exception{
-        return "Hello World3";
+        return "Hello World4";
     }
     @RequestMapping(value="/ssssksss/test", method= RequestMethod.GET)
     public String test() throws Exception{
