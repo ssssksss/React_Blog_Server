@@ -12,7 +12,6 @@ bootWar {
 	archiveFileName='ssssksss_server.war'
 }
 
-bootWar.enabled = false
 war.enabled = true
 
 group = 'com.ssssksss'
