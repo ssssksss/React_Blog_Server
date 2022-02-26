@@ -15,13 +15,17 @@ import org.springframework.web.bind.annotation.*;
  */
 
 @RestController
-@RequiredArgsConstructor
 public class TestController {
 
     @RequestMapping(value="/ssssksss/test", method= RequestMethod.POST)
     @CrossOrigin(origins="*", allowedHeaders="*")
     public ResponseEntity testPost(@RequestBody String test) {
         return ResponseEntity.ok().body(new ResponseStatusDto(200,"POST API 성공"));
+    }
+    
+    @RequestMapping("/")
+    public String index() throws Exception{
+        return "Hello World";
     }
 
 }
