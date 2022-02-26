@@ -10,8 +10,10 @@ apply plugin:'war'
 bootWar {
 	archiveBaseName='ssssksss_server'
 	archiveFileName='ssssksss_server.war'
-	archiveVersion="0.0.0"
 }
+
+bootWar.enabled = false
+war.enabled = true
 
 group = 'com.ssssksss'
 version = '0.0.1-SNAPSHOT'
